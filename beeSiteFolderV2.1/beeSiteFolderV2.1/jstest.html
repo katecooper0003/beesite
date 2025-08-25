@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+<title>JS Test</title>
+<link rel="stylesheet" href="style.css">
+
+
+
+<style>
+
+
+/*desktop and laptop*/
+@media screen and (min-width: 992px) {
+ 
+
+	.grid-container {
+		grid-template-areas: 
+			'header header header header header' 
+			'barrySurvay barrySurvay barrySurvay barrySurvay barrySurvay' 
+			'footer footer footer footer footer';
+	}
+}
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  
+
+	.grid-container {
+		grid-template-areas: 
+			'header header header header' 
+			'barrySurvay barrySurvay barrySurvay barrySurvay' 
+			'footer footer footer footer';
+	}
+}
+
+@media screen and (max-width: 768px) {
+  
+	.grid-container {
+		grid-template-areas: 
+			'header'
+			'barrySurvay'
+			'footer';
+	}
+}
+
+
+
+</style>
+
+
+
+</head>
+
+
+<body>
+
+
+<div class="grid-container">
+
+
+	<header>
+		<div class="title">BEE SITE BEE SITE</div>
+        <nav>
+		
+		  <a class="longlinks" href="home.html">Home</a>
+          <a class="active longlinks" href="#jstest">JS Test</a>
+		  <a class="longlinks" href="about.html">About</a>
+          <a class="longlinks" href="gallery.html">Gallery</a>
+		
+		  <div class="dropdown">
+			 <a>Dropdown</a>
+  			
+  			   <div class="dropdown-content">
+				    <ul>
+    				   <li><a href="home.html">Home</a></li>
+                        
+                        <li><a class="active" href="#jstest">JS Test</a></li>
+                        
+					   <li><a href="gallery.html">Gallery</a></li>
+					   <li><a href="about.html">About</a></li>
+				    </ul>
+ 	 		   </div>
+		  </div>
+
+		
+	   </nav>
+	</header>
+
+
+	
+	<div class="barrySurvay" style="height: auto;">
+		<div class="sideheader">Barry B. Benson Survay</div>
+		  <h2 id="beesults">It would bee advised to respond to me</h2>
+            
+         <article>
+      		<div id="results">
+          		<ul style="color: blue; font-size: 5px;">
+                    <!--list below displays what ending you got-->
+             		<li id="item1"></li>
+             		<li id="item2"></li>
+             		<li id="item3"></li>
+          			</ul>
+          				<p id="resultsExpl"></p>
+      		</div>
+      		<form>
+         		<fieldset>
+
+            	   <input type="radio" id="good" name="radio1" value="goodEnd">
+            	   <label for="good">I love bees! Drown me in honey OwO!</label><br>
+              
+            	   <input type="radio" id="neutral" name="radio1" value="neutralEnd">
+            	   <label for="neutral">Bees are OK I guess...</label><br>
+              
+            	   <input type="radio" id="bad" name="radio1" value="badEnd">
+            	   <label for="bad">I hate bees with a burning passion. Beegone you infernal demon!</label><br>
+              
+          	     </fieldset>
+
+          	     <fieldset>
+            	       <button type="button" id="survayButton">Submit</button>
+          	     </fieldset>
+      	     </form>
+        </article>
+
+   				
+	 
+    </div>
+
+    
+    
+    
+    
+    <!--Evil button-->
+    <div class="test" id="evilButtonContainer" style="height: auto;">
+		<div class="sideheader">Test</div>
+		  
+            
+         <article>
+      		<div id="results">
+          		<ul style="color: blue; font-size: 5px;">
+                    <!--list below displays what ending you got-->
+             		<li id="item1"></li>
+             		<li id="item2"></li>
+             		<li id="item3"></li>
+          			</ul>
+          				<p id="resultsExpl"></p>
+      		</div>
+      		<form>
+         		
+
+          	     <fieldset>
+            	       <button type="button" id="evilButton">Evil Button</button>
+          	     </fieldset>
+      	     </form>
+        </article>
+     
+        
+    </div>
+
+    <footer>
+        <p>This Website was made by Kit Cooper</p>
+	</footer>
+
+</div>
+
+
+</body>
+
+    <!--script for evil/scary bee button-->
+<script>
+    var evilTimer = setTimeout("openEvilBee()",10000);
+    
+    
+    function processInput(){   
+        document.getElementById("evilButtonContainer").style.backgroundColor = "black";
+        document.getElementById("evilButtonContainer").style.color = "darkred";
+        //window.open("https://thebearfootbaker.com/wp-content/uploads/2018/05/Giant-European-Hornet-The-Bearfoot-Baker.jpg", "scaryBee");
+    }
+    
+    function openEvilBee(){
+        //window.open("https://thebearfootbaker.com/wp-content/uploads/2018/05/Giant-European-Hornet-The-Bearfoot-Baker.jpg", "scaryBee");
+    
+    window.open("scaryBee.jpg", "scaryBee");
+    
+    
+    
+    }
+    
+            //listens for the button being clicked to call the main function
+        document.getElementById("evilButton").addEventListener("click", processInput);
+</script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!--script for barry bee benson querry-->
+<script>
+        var beelist = ["It would bee advised to respond to me", "Barry B. Benson approves! Bee-utifully done!", "Barry B. Benson is disapointed", "Barry B. Benson says: &ldquo;It would bee wise for you not to fall asleep&rdquo;"]
+        var i = 1;
+        var listItem = "";
+    
+        //goes goes through until i is more than 3.
+        function processInput(){
+            if (i <= 3){
+                listItem = ("item"+ i);
+                var egg = document.querySelector('input[name="radio1"]:checked').value;
+                
+                //sets the current toolbox value to the path on the list that matches i
+                document.getElementById(listItem).innerHTML = egg;
+
+                //prints java list value to user IE shows result
+                if (egg == "goodEnd"){
+                    document.getElementById("beesults").innerHTML = beelist[1];
+                }
+                else if (egg == "neutralEnd"){
+                    document.getElementById("beesults").innerHTML = beelist[2];
+                }
+                else if (egg == "badEnd"){
+                    document.getElementById("beesults").innerHTML = beelist[3];
+                }
+                else{
+                    document.getElementById("beesults").innerHTML = beelist[0];
+                
+                }
+                //resets the egg placeholder variable 
+                egg = "";
+                
+                //if i is equal to 3 notifies user that they cant enter things any more
+                if (i == 3){
+                    
+                    document.getElementById("resultsExpl").innerHTML = 
+            "NO MORE CHANCES SORRY";
+                
+                }
+                i++;
+            
+            }
+            
+        }
+        //listens for the button being clicked to call the main function
+        document.getElementById("survayButton").addEventListener("click", processInput);
+        
+    </script>
+
+
+</html>

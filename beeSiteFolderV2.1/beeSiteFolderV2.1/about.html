@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+<link rel="stylesheet" href="style.css">
+
+
+<style>
+    
+/*desktop and laptop*/
+@media screen and (min-width: 992px) {
+  
+
+	.grid-container {
+		grid-template-areas: 
+			'header header header header header' 
+			'main main main main main' 
+			'main main main main main'
+			'footer footer footer footer footer';
+	}
+}
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  
+
+	.grid-container {
+		grid-template-areas: 
+			'header header header header'  
+			'main main main main' 
+			'main main main main'
+			'footer footer footer footer';
+	}
+}
+
+@media screen and (max-width: 768px) {
+  
+	.grid-container {
+		grid-template-areas: 
+			'header' 
+			'main' 
+			'main'
+			'footer';
+	}
+    
+}
+
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<div class="grid-container">
+    <header>
+		<div class="title">BEE SITE BEE SITE</div>
+	       <nav>
+		        <a class="longlinks" href="home.html">Home</a>
+                <a class="longlinks" href="jstest.html">JS Test</a>
+		  <a class="active longlinks" href="#about">About</a>
+          <a class="longlinks" href="gallery.html">Gallery</a>
+		
+		  <div class="dropdown">
+			 <a>Dropdown</a>
+  			
+  			   <div class="dropdown-content">
+				    <ul>
+    				   <li><a href="home.html">Home</a></li>
+                        
+                        <li><a href="jstest.html">JS Test</a></li>
+                        
+					   <li><a href="gallery.html">Gallery</a></li>
+					   <li><a class="active" href="#about">About</a></li>
+				    </ul>
+ 	 		   </div>
+		  </div>
+        </nav>
+    </header>
+    
+
+    <main style="height: 250px;">
+	   <p>Hello there. This is a practice/test site that I am using to advance my skills in Javascript, HTML, and CSS. BEEEESSS</p>
+    </main>
+    
+    <footer>
+        <p>This Website was made by Kit Cooper</p>
+	</footer>
+
+
+</div>
+
+
+
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,367 @@
+/*desktop*/
+@media screen and (min-width: 992px) {
+html {
+	
+	
+}
+
+body {
+	background-image: url("hughneutron.jpg");
+	background-attachment: fixed;
+	background-size: auto;
+	
+
+
+	
+	
+}
+!p{
+	color:black;
+	text-align: justify;
+	text-align-last: center;
+	margin:10px;
+	
+
+
+}
+
+ul{
+	list-style-type: none;
+	text-align: center;
+
+
+}
+
+
+
+* {
+	font-size:25px;
+
+
+}
+
+
+
+img{
+
+
+}
+
+.grid-container {
+	
+	display: grid;
+	grid-gap: 10px;
+	padding: 10px;
+}
+
+.grid-container > * {
+	background-color: #FFFF99;
+	border-radius: 10px;
+	text-align: center;
+  	padding: 20px 0;
+  	font-size: 30px;
+	border: 4px solid orange;
+}
+nav {
+	/*grid-area: nav;*/
+	overflow: hidden;
+}
+
+nav a {
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	border-radius: 10px;
+}
+
+nav a:hover {
+	background-color: orange;
+	color: black;
+
+}
+
+nav a:active {
+	background-color: #04AA6D;
+	color: white;
+
+}
+
+header {
+	grid-area: header;
+	overflow: hidden;
+    
+}
+
+aside {
+	height: 500px;
+
+}
+.aside1 {
+	grid-area: aside1;
+
+}
+.aside2 {
+	grid-area: aside2;
+}
+main {
+	grid-area: main;
+}
+!article {
+	grid-area: article;
+
+}
+.article1{
+    grid-area: article1;
+}
+
+
+
+footer {
+	grid-area: footer;
+}
+
+
+	
+
+.title {
+	font-size:50px;
+
+}
+
+.sideheader {
+	font-size:30px;
+
+}
+
+.sidepar {
+	color:black;
+	text-align: left;
+	margin:10px;
+	font-size: 20px;
+
+}
+
+/*dropdown*/
+
+.dropdown {
+  position: static;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: yellow;
+  min-width: 160px;
+  z-index: 10;
+	border: 2px solid orange;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    
+    
+h2 {
+	font-size: 20px;
+
+}
+
+.dropdown-content ul {
+	text-align: left;
+
+}
+.dropdown-content ul li a {
+	color: black;
+	text-align: center;
+	padding: 2px;
+	text-decoration: none;
+	font-size: 20px;
+	border-radius: 10px;
+
+}
+    
+    
+    
+    
+    
+}
+
+
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    
+}
+
+
+/*mobile phone*/
+/*@media screen and (max-width: 768px) {*/
+
+/*temporarily doing mobile screens and tablets*/
+@media screen and (max-width: 992px){
+
+fieldset {
+    border: none;
+    
+}    
+
+body {
+	background-image: url("hughneutron.jpg");
+	background-attachment: fixed;
+	background-size: auto;
+}
+
+ul{
+	list-style-type: none;
+	text-align: center;
+
+}
+
+
+
+* {
+	font-size:19px;
+
+
+}
+
+
+.grid-container {
+	
+	display: grid;
+	grid-gap: 5px;
+	padding: 5px;
+}
+
+.grid-container > * {
+	background-color: #FFFF99;
+	border-radius: 9px;
+	text-align: center;
+  	padding: 13px 0;
+    
+	border: 2px solid orange;
+}
+nav {
+	/*grid-area: nav;*/
+	overflow: hidden;
+}
+
+nav a {
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	border-radius: 25px;
+}
+
+nav a:hover {
+	background-color: orange;
+	color: black;
+
+}
+
+nav a:active {
+	background-color: #04AA6D;
+	color: white;
+
+}
+
+header {
+	grid-area: header;
+	overflow: hidden;
+    
+    
+}
+
+aside {
+	height: 500px;
+
+}
+.aside1 {
+	grid-area: aside1;
+
+}
+.aside2 {
+	grid-area: aside2;
+}
+main {
+	grid-area: main;
+}
+article {
+	grid-area: article;
+
+}
+
+footer {
+	grid-area: footer;
+    margin-bottom: 5px;
+}
+
+
+	
+
+.title {
+	font-size:30px;
+
+}
+
+.sideheader {
+	font-size:30px;
+
+}
+
+
+
+/*dropdown*/
+
+.dropdown {
+  position: static;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: yellow;
+  min-width: 160px;
+  z-index: 10;
+	border: 2px solid orange;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    
+    
+h2 {
+	font-size: 20px;
+
+}
+
+.dropdown-content ul {
+	text-align: left;
+
+}
+.dropdown-content ul li a {
+	color: black;
+	text-align: center;
+	padding: 2px;
+	text-decoration: none;
+	font-size: 20px;
+	border-radius: 10px;
+
+}
+    
+/*hides the desktop nav bar*/    
+a.longlinks {
+  display: none;
+}
+    
+
+}
+    
+    

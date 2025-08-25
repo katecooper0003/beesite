@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="style.css">
+
+
+
+<style>
+
+
+/*desktop and laptop*/
+@media screen and (min-width: 992px) {
+  
+
+	.grid-container {
+		grid-template-areas: 
+			'header header header header header' 
+			'aside1 main main main aside2' 
+			'aside1 main main main aside2'
+			'footer footer footer footer footer';
+	}
+    #mobilebeeholder{
+        display: none;
+    }
+}
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  
+
+	.grid-container {
+		grid-template-areas: 
+			'header header header header' 
+			'aside1 main main main' 
+			'aside1 main main main'
+			'footer footer footer footer';
+	}
+    
+    aside.aside2 {
+        display: none;
+    }
+    #mobilebeeholder{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  
+	.grid-container {
+		grid-template-areas: 
+			'header'
+			'main' 
+            'mobilebeeholder'
+			'footer';
+	}
+    aside {
+        display: none;
+    }
+    
+    
+
+
+}
+#mobilebeeholder{
+    grid-area: mobilebeeholder;
+    overflow: hidden;
+    margin: center;
+    
+    background-color: rgba(100,10,10,.5);
+
+}
+#mobilebeeholder p{
+    color: maroon;
+    font-size:30px;
+    margin-top:-100px;
+}
+.mobilebee{
+
+    overflow: hidden;
+    width:100%;
+    margin: center;
+    
+    
+	
+}
+
+</style>
+
+
+
+</head>
+
+
+<body>
+
+
+<div class="grid-container">
+
+	<header>
+		<div class="title">BEE SITE BEE SITE</div>
+        <nav>
+		
+		  <a class="active longlinks" href="#home">Home</a>
+          <a class="longlinks" href="jstest.html">JS Test</a>
+		  <a class="longlinks" href="about.html">About</a>
+          <a class="longlinks" href="gallery.html">Gallery</a>
+		
+		  <div class="dropdown">
+			 <a>Dropdown</a>
+  			
+  			   <div class="dropdown-content">
+				    <ul>
+    				   <li><a class="active" href="#home">Home</a></li>
+                        
+                        <li><a href="jstest.html">JS Test</a></li>
+                        
+					   <li><a href="gallery.html">Gallery</a></li>
+					   <li><a href="about.html">About</a></li>
+				    </ul>
+ 	 		   </div>
+		  </div>
+
+		
+	   </nav>
+	</header>
+    
+    <div id="mobilebeeholder">
+        <img class="mobilebee" src="sunglassesBee.gif" alt="clipart bee gif" ><p>What a wacky bee!</p>
+    </div>
+
+	<aside class="aside1">
+		
+		<div class="sideheader">Bee Fact 1</div>
+		<h2>Beeeeeeeeeees! they look like this!</h2>
+		<img src="sunglassesBee.gif" alt="clipart bee gif" >
+		
+
+
+	</aside>
+	
+	<aside class="aside2">
+  		
+		<div class="sideheader">Bee fact 2</div>
+			
+		  <h2 id="beesults">This site is un-BEE-lievable</h2>
+        <img src="carlwheezershaggy.webp" alt="Carl Wheezer and Norville 'shaggy' rogers dance the macarena">
+
+   				
+		
+	</aside>
+    
+
+	<main>
+		<p>According to all known laws
+of aviation, there is no way a bee
+should be able to fly. Its wings are too small to get
+its fat little body off the ground. The bee, of course, flies anyway because bees don't care
+what humans think is impossible. Yellow, black. Yellow, black.
+Yellow, black. Yellow, black. Ooh, black and yellow!
+Let's shake it up a little.</p>
+	</main>
+
+
+
+  	<footer>
+        <p>This Website was made by Kit Cooper</p>
+	</footer>
+
+</div>
+
+
+</body>
+
+
+</html>

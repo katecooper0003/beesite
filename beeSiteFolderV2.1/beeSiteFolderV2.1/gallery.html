@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+<link rel="stylesheet" href="style.css">
+
+
+
+<style>
+
+
+/*desktop and laptop*/
+@media screen and (min-width: 992px) {
+  
+
+	.grid-container {
+		grid-template-areas: 
+			'header header header header header' 
+			'main main main main main' 
+			'main main main main main'
+            'jazzImg jazzImg jonImg jonImg kirbImg'
+            'eggImg eggImg shrekImg shrekImg garfImg'
+			'footer footer footer footer footer';
+	}
+}
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  
+
+	.grid-container {
+		grid-template-areas: 
+			'header header header header' 
+			'main main main main' 
+			'main main main main'
+            'jazzImg jazzImg eggImg eggImg'
+            'shrekImg shrekImg jonImg garfImg'
+            'shrekImg shrekImg kirbImg garfImg'
+			'footer footer footer footer';
+	}
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+  
+	.grid-container {
+		grid-template-areas: 
+			'header' 
+            'jazzImg'
+            'main'
+            'kirbImg'
+            'eggImg'
+            'shrekImg'
+            'jonImg'
+            'garfImg'
+			'footer';
+    }
+    .galleryImg {
+
+    }
+    
+
+
+
+}
+
+
+    
+.galleryImg {
+    /*max-width: 200px;*/
+    max-width:100%;
+    max-height:100%;
+    
+    
+	border-radius: 10px;
+	text-align: center;
+  	padding: 0px 0;
+  	font-size: 30px;
+	border: 3px solid black;
+    
+}
+
+#jazzImg{
+    grid-area: jazzImg;
+    margin-bottom: auto;
+    width:100%;
+    
+}
+    
+#kirbImg{
+    grid-area: kirbImg;
+    margin: auto;
+    width: 100%;
+    
+}
+    
+#eggImg{
+    grid-area: eggImg;
+    margin: auto;
+    
+}
+#shrekImg{
+    grid-area: shrekImg;
+    margin: auto;
+    
+}
+#garfImg{
+    grid-area: garfImg;
+    margin: auto;
+    
+}
+#jonImg{
+    grid-area: jonImg;
+    margin: auto;
+    height: 100%;
+    
+}
+
+</style>
+
+
+
+</head>
+
+
+<body>
+
+
+<div class="grid-container">
+
+	<header>
+		<div class="title">BEE SITE BEE SITE</div>
+        <nav>
+		
+		  <a class="longlinks" href="home.html">Home</a>
+          <a class="longlinks" href="jstest.html">JS Test</a>
+		  <a class="longlinks" href="about.html">About</a>
+		  <a class="active longlinks" href="#gallery">Gallery</a>
+		  <div class="dropdown">
+			 <a>Dropdown</a>
+  			
+  			   <div class="dropdown-content">
+				    <ul>
+    				   <li><a href="home.html">Home</a></li>
+                        
+                        <li><a href="jstest.html">JS Test</a></li>
+                        
+					   <li><a class="active" href="#gallery">Gallery</a></li>
+					   <li><a href="about.html">About</a></li>
+				    </ul>
+ 	 		   </div>
+		  </div>
+
+		
+	   </nav>
+	</header>
+    
+
+	<main>
+		<p>This is just a collection of images and gifs for my own testing purposes</p>
+	</main>
+
+        <img class="galleryImg" id="jazzImg" src=https://media1.tenor.com/images/0ce6cc7d2a7e2b05e4e637da031015d0/tenor.gif?itemid=7542753 alt="beemovie">
+    
+        <img class="galleryImg" id="kirbImg" src="kirby-dance.gif" alt="Kirby dancing">
+    
+        <img class="galleryImg" id="eggImg" src="placeholderEgg.jpg" alt="eggs">
+    
+        <img class="galleryImg" id="shrekImg" src="shrek.jpg" alt="shrek">
+    
+        <img class="galleryImg" id="garfImg" src="cursedGarfield.jpg" alt="cursed Garfield plush">
+    
+        <img class="galleryImg" id="jonImg" src="arbuckleDance.gif" alt="Jon Arbuckle dancing">
+    
+  	<footer>
+        <p>This Website was made by Kit Cooper</p>
+	</footer>
+
+</div>
+
+
+</body>
+
+
+</html>
